@@ -1,0 +1,48 @@
+.home {
+	padding: 6px 20px;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+
+	.container {
+		width: 100%;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		h1 {
+			align-self: center;
+			color: purple;
+			margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 8px;
+			background-color: rgba(128, 0, 128, 0.151);
+		}
+
+		button {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			border: none;
+			padding: 8px;
+			cursor: pointer;
+			background-color: purple;
+			border-radius: 5px;
+			color: white;
+			font-weight: 600;
+			width: max-content;
+			transition: all 0.5s ease-in-out;
+
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+
+		.line {
+			background-color: 0.5px solid#ddd;
+			margin: 10px;
+			opacity: 0.4;
+		}
+	}
+}

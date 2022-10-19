@@ -1,0 +1,103 @@
+.employeeDetails {
+	padding: 20px 20px;
+	display: flex;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+
+	.backBtn {
+		cursor: pointer;
+		align-self: flex-start;
+		border: none;
+		padding: 10px;
+		background-color: gray;
+		color: black;
+	}
+
+	h1 {
+		align-self: center;
+		color: purple;
+		margin: 20px 0;
+	}
+
+	form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 16px;
+		width: 100%;
+		border: 1px solid #ddd;
+		padding: 10px;
+
+		.inputGroup {
+			display: flex;
+			flex-direction: column;
+			width: 250px;
+
+			label {
+				font-weight: 600;
+				color: purple;
+			}
+
+			input,
+			textarea,
+			select {
+				border: none;
+				padding: 8px;
+				outline: none;
+				background-color: rgba(128, 0, 128, 0.151);
+				border-radius: 5px;
+				font-size: 16px;
+
+				&:focus {
+					border-bottom: 2px solid purple;
+				}
+			}
+		}
+
+		.status {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			font-weight: 600;
+			padding: 8px;
+			background-color: rgba(128, 0, 128, 0.151);
+			border-radius: 5px;
+			color: purple;
+			width: 250px;
+		}
+
+		.save {
+			width: 250px;
+			text-align: center;
+			background-color: goldenrod;
+			color: white;
+			padding: 8px;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: all 0.5s ease-in-out;
+			border: none;
+
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+
+		.delete {
+			width: 250px;
+			text-align: center;
+			background-color: crimson;
+			color: white;
+			padding: 8px;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: all 0.5s ease-in-out;
+			border: none;
+
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+	}
+}

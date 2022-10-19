@@ -1,0 +1,60 @@
+.employees {
+	overflow-x: auto;
+	.table {
+		table {
+			border-collapse: collapse;
+			width: 100%;
+
+			thead {
+				background-color: #171717;
+				color: white;
+			}
+
+			th,
+			td {
+				padding: 8px;
+				text-align: left;
+				border-bottom: 1px solid #ddd;
+			}
+
+			.action {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+
+				.edit {
+					color: teal;
+					cursor: pointer;
+					font-size: 20px;
+				}
+
+				.delete {
+					color: crimson;
+					cursor: pointer;
+					font-size: 20px;
+				}
+			}
+
+			.userInfo {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+
+				.userName {
+					font-weight: 700;
+					color: teal;
+				}
+
+				.userImg {
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+				}
+			}
+
+			tr:hover {
+				background-color: rgba(128, 0, 128, 0.151);
+			}
+		}
+	}
+}
